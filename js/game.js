@@ -34,7 +34,7 @@ class Game{
     player2.addImage("player2", player2_img);
     player2.scale=0.4;
 
-    rock= createSprite(400,350);
+    rock= createSprite(300,350);
     rock.addImage("rock",rockImg);
     rock.scale=0.3;
 
@@ -42,7 +42,7 @@ class Game{
     paper.addImage("paper",paperImg);
     paper.scale=0.3;
 
-    scissors= createSprite(1100,350);
+    scissors= createSprite(1300,350);
     scissors.addImage("scissors",scissorsImg);
     scissors.scale=0.3;
 
