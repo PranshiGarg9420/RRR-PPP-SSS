@@ -8,7 +8,7 @@ var player, form,game;
 var player1,player2;
 var players;
 var rockImg,paperImg,scissorsImg;
-
+var sound;
 
 function preload(){
   back_img = loadImage("images/bkg img.jpg");
@@ -17,7 +17,7 @@ function preload(){
   scissorsImg= loadImage("images/scissors img.png");
   player1_img = loadImage("images/player 1.png");
   player2_img = loadImage("images/player2.png");
-  
+   sound= loadSound("sound.mp3");
   
 }
 function setup() {
@@ -26,7 +26,7 @@ function setup() {
   game = new Game();
   game.getState();
   game.start();
-  
+  sound= loadSound("sound.mp3");
 }
 
 function draw() {
