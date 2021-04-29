@@ -87,6 +87,7 @@ class Game{
                          textSize(40);
                          //font("Stencil");
                          text("YOU ARE WRAPPED",550,200);
+                         sound.play();
 
                         }
 
@@ -98,6 +99,7 @@ class Game{
                             fill("yellow");
                              textSize(40);
                              text(" YOU ARE CHOPPED",550,200);
+                             sound.play();
     
                             }
 
@@ -108,19 +110,22 @@ class Game{
                                 //if(rock === rock||paper === paper||scissors === scissors){
                                 fill("yellow");
                                  textSize(40);
+                                 font("cantal");
                                  text("HITTED HARDLY",550,200);
+                                 sound.play();
         
                                 }
 
                                 if(player1.isTouching(paper)&& player2.isTouching(paper)){
                                     //scissors.scale= 0.7;
                                     //if(rock === rock||paper === paper||scissors === scissors){
-                                        rock.scale= 0.3;
-                                        paper.scale=0.3;
-                                        scissors.scale=0.3;
+                                    rock.scale= 0.3;
+                                    paper.scale=0.3;
+                                    scissors.scale=0.3;
                                     fill("yellow");
                                      textSize(40);
                                      text("MATCH DRAWN",550,200);
+                                     sound.stop();
             
                                     }
 
@@ -133,6 +138,7 @@ class Game{
                                         fill("yellow");
                                          textSize(40);
                                          text("MATCH DRAWN",550,200);
+                                         sound.stop();
                 
                                         }
 
@@ -145,6 +151,7 @@ class Game{
                                             fill("yellow");
                                              textSize(40);
                                              text("MATCH DRAWN",550,200);
+                                             sound.stop();
                     
                                             }
 
@@ -156,6 +163,7 @@ class Game{
                                                 fill("yellow");
                                                  textSize(40);
                                                  text("HITTED HARDLY",550,200);
+                                                 sound.play();
                         
                                                 }
                                                 
@@ -168,6 +176,7 @@ class Game{
                                                     fill("yellow");
                                                      textSize(40);
                                                      text("YOU ARE WRAPPED",550,200);
+                                                     sound.play();
                             
                                                     }
 
@@ -179,6 +188,7 @@ class Game{
                                                         fill("yellow");
                                                          textSize(40);
                                                          text("YOU ARE CHOPPED",550,200);
+                                                         sound.play();
                                 
                                                         }
                                             
@@ -259,6 +269,15 @@ class Game{
                         player.distance -=10
                         player.update();
                       }
+
+                    /*if (keyIsDown(UP_ARROW) && player.index !== null) {
+                        player.distance -= 10
+                        player.update();
+                    }
+                    if(keyIsDown(DOWN_ARROW) && player.index !== null){
+                        player.distance +=10
+                        player.update();
+                      }*/
                       
                     
                     
